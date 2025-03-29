@@ -1,4 +1,10 @@
 import "../styles/Projects.css";
+import "../styles/Projects.css";
+import newsImg from "../assets/news.png";
+import securityImg from "../assets/security.png";
+import codeQuestImg from "../assets/codeQuest.png";
+import addressImg from "../assets/address.jpg";
+import textUtilsImg from "../assets/textUtils.png";
 
 function Projects() {
   const projects = [
@@ -15,7 +21,7 @@ function Projects() {
       
       <span>Impact</span>
       Combined news, finance, and weather updates in one platform. Gained expertise in React, API handling, and real-time data fetching.`,
-      image: "src/assets/news.png"
+      image: newsImg,
     },
     {
       title: "CodeQuest",
@@ -30,7 +36,7 @@ function Projects() {
       
       <span>Impact</span>
       Created an engaging developer platform. Gained full-stack experience (React, MongoDB, REST APIs) and improved API/database handling skills.`,
-      image: "src/assets/codeQuest.png"
+      image: codeQuestImg,
     },
     {
       title: "AI Cyber Threat Detection System",
@@ -45,7 +51,7 @@ function Projects() {
       
       <span>Impact</span>
       Provided real-time security against online scams. Gained expertise in AI, Machine Learning, and cybersecurity.`,
-      image: "src/assets/secutity.png"
+      image: securityImg,
     },
     {
       title: "IP Address Tracker",
@@ -60,7 +66,7 @@ function Projects() {
       
       <span>Impact</span>
       Provided users with an easy way to track IP addresses in real time. Strengthened API integration, JavaScript, and frontend development skills. Gained experience in working with geolocation services and interactive maps.`,
-      image: "src/assets/address.jpg"
+      iimage: addressImg,
     },
     {
       title: "TextUtils",
@@ -76,7 +82,7 @@ function Projects() {
       
       <span>Impact</span>
       Simplified text formatting for users. Strengthened skills in ReactJS and state management. Enhanced UX design understanding.`,
-      image: "src/assets/textUtils.png"
+      image: textUtilsImg,
     }
   ];
 
@@ -91,7 +97,7 @@ function Projects() {
             </div>
             <div className="project-details">
               <h2>{project.title}</h2>
-              <p dangerouslySetInnerHTML={{ __html: project.description }}></p>
+              <p>{project.description}</p>
             </div>
           </div>
         ))}

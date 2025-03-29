@@ -14,8 +14,8 @@ body {
 /* Apply background only to Home Page */
 /* Apply background only to Home Page */
 .home-container {
-  background: url("./../assets/Home_bg.jpg") no-repeat center center;
-  background-size: cover; /* Ensures full coverage */
+  background-size: cover;
+  background-position: center;
   width: 100vw; /* Full viewport width */
   height: 100vh; /* Full viewport height */
   display: flex;

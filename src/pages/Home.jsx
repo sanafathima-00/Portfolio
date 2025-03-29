@@ -1,6 +1,6 @@
 import "../styles/Home.css";
 import { useState, useEffect } from "react";
-
+import homeBg from "../assets/Home_bg.jpg";
 function Home() {
   const roles = ["a Web Developer.", "a Cybersecurity Enthusiast.", "a Tech Explorer."];
   const [roleIndex, setRoleIndex] = useState(0);
@@ -33,7 +33,7 @@ function Home() {
   }, [text, isDeleting, roleIndex]);
 
   return (
-    <div className="home-container">
+    <div className="home-container" style={{ backgroundImage: `url(${homeBg})` }}>
       {/* ✅ Hero Section */}
       <div className="hero-section">
         <h1 className="hero-text">
