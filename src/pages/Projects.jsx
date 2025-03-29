@@ -1,6 +1,6 @@
 import "../styles/Projects.css";
 import "../styles/Projects.css";
-import newsImg from "../assets/news.png";
+const newsImg = new URL("../assets/news.png", import.meta.url).href;
 import securityImg from "../assets/security.png";
 import codeQuestImg from "../assets/codeQuest.png";
 import addressImg from "../assets/address.jpg";
