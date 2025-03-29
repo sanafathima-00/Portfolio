@@ -1,11 +1,10 @@
 import "../styles/Projects.css";
-import "../styles/Projects.css";
-import newsImg from "../assets/news.png";
-import securityImg from "../assets/security.png";
-import codeQuestImg from "../assets/codeQuest.png";
-import addressImg from "../assets/address.jpg";
-import textUtilsImg from "../assets/textUtils.png";
-
+import React from "react";
+import newsImg from "./../assets/news.png";
+import codequestImg from "./../assets/codequest.png";
+import securityImg from "./../assets/security.png";
+import addressImg from "./../assets/address.jpg";
+import textutilsImg from "./../assets/textutils.png";
 function Projects() {
   const projects = [
     {
@@ -36,7 +35,7 @@ function Projects() {
       
       <span>Impact</span>
       Created an engaging developer platform. Gained full-stack experience (React, MongoDB, REST APIs) and improved API/database handling skills.`,
-      image: codeQuestImg,
+      image: codequestImg,
     },
     {
       title: "AI Cyber Threat Detection System",
@@ -66,7 +65,7 @@ function Projects() {
       
       <span>Impact</span>
       Provided users with an easy way to track IP addresses in real time. Strengthened API integration, JavaScript, and frontend development skills. Gained experience in working with geolocation services and interactive maps.`,
-      iimage: addressImg,
+      image: addressImg,
     },
     {
       title: "TextUtils",
@@ -82,7 +81,7 @@ function Projects() {
       
       <span>Impact</span>
       Simplified text formatting for users. Strengthened skills in ReactJS and state management. Enhanced UX design understanding.`,
-      image: textUtilsImg,
+      image: textutilsImg,
     }
   ];
 
