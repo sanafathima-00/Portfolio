@@ -1,10 +1,10 @@
 import "../styles/Projects.css";
 import React from "react";
-import newsImg from "./../assets/news.png";
-import codequestImg from "./../assets/codequest.png";
-import securityImg from "./../assets/security.png";
-import addressImg from "./../assets/address.jpg";
-import textutilsImg from "./../assets/textutils.png";
+import newsImg from "./../../public/assets/news.png";
+import codequestImg from "./../../public/assets/codequest.png";
+import securityImg from "./../../public/assets/security.png";
+import addressImg from "./../../public/assets/address.jpg";
+import textutilsImg from "./../../public/assets/textutils.png";
 function Projects() {
   const projects = [
     {

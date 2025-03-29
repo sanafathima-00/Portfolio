@@ -1,6 +1,6 @@
 import "../styles/Home.css";
 import { useState, useEffect } from "react";
-import homeBg from "../assets/Home_bg.jpg";
+import homeBg from "./../../public/assets/Home_bg.jpg";
 function Home() {
   const roles = ["a Web Developer.", "a Cybersecurity Enthusiast.", "a Tech Explorer."];
   const [roleIndex, setRoleIndex] = useState(0);
