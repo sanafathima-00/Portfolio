@@ -1,10 +1,6 @@
 import "../styles/Projects.css";
 import React from "react";
-import newsImg from "./../../public/assets/news.png";
-import codequestImg from "./../../public/assets/codequest.png";
-import securityImg from "./../../public/assets/security.png";
-import addressImg from "./../../public/assets/address.jpg";
-import textutilsImg from "./../../public/assets/textutils.png";
+
 function Projects() {
   const projects = [
     {
@@ -20,7 +16,7 @@ function Projects() {
       
       <span>Impact</span>
       Combined news, finance, and weather updates in one platform. Gained expertise in React, API handling, and real-time data fetching.`,
-      image: newsImg,
+      image: "/assets/news.png",
     },
     {
       title: "CodeQuest",
@@ -35,7 +31,7 @@ function Projects() {
       
       <span>Impact</span>
       Created an engaging developer platform. Gained full-stack experience (React, MongoDB, REST APIs) and improved API/database handling skills.`,
-      image: codequestImg,
+      image: "/assets/codeQuest.png",
     },
     {
       title: "AI Cyber Threat Detection System",
@@ -50,7 +46,7 @@ function Projects() {
       
       <span>Impact</span>
       Provided real-time security against online scams. Gained expertise in AI, Machine Learning, and cybersecurity.`,
-      image: securityImg,
+      image: "/assets/security.png",
     },
     {
       title: "IP Address Tracker",
@@ -65,7 +61,7 @@ function Projects() {
       
       <span>Impact</span>
       Provided users with an easy way to track IP addresses in real time. Strengthened API integration, JavaScript, and frontend development skills. Gained experience in working with geolocation services and interactive maps.`,
-      image: addressImg,
+      image: "/assets/address.jpg",
     },
     {
       title: "TextUtils",
@@ -74,14 +70,14 @@ function Projects() {
       
       <span>How I built it?</span>
       ◈ Built using ReactJS for a smooth user experience.
-      ◈ Used React Hooksfor real-time updates.
+      ◈ Used React Hooks for real-time updates.
       ◈ Implemented dark mode/light mode toggle.
       ◈ Added a copy-to-clipboard feature.
       ◈ Optimized text transformations for speed and efficiency.
       
       <span>Impact</span>
       Simplified text formatting for users. Strengthened skills in ReactJS and state management. Enhanced UX design understanding.`,
-      image: textutilsImg,
+      image: "/assets/textUtils.png",
     }
   ];
 
@@ -96,7 +92,7 @@ function Projects() {
             </div>
             <div className="project-details">
               <h2>{project.title}</h2>
-              <p>{project.description}</p>
+              <p dangerouslySetInnerHTML={{ __html: project.description }}></p>
             </div>
           </div>
         ))}
