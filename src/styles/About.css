@@ -1,0 +1,174 @@
+/* ✅ General About Page Styles */
+.about-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url("./../assets/All_bg.jpg") no-repeat center center;
+  background-size: cover;  /* Ensures the image covers the entire screen */
+  background-attachment: fixed; /* Keeps the background fixed when scrolling */
+  backdrop-filter: blur(10px); /* Adds a blur effect to the background */
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 80px 5%;
+}
+
+/* ✅ Layout Wrapper */
+.content-wrapper {
+  display: flex;
+  flex-direction: column;  /* Stack items vertically */
+  align-items: flex-start; /* Align content to the left */
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* ✅ Left Section - About Content */
+/* ✅ Centering the About Card */
+.about-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers everything inside */
+  text-align: center;
+  padding-right: 0;
+}
+
+.about-card {
+  background: linear-gradient(145deg, #1c0129, #3b023d);
+  box-shadow: 0px 10px 30px rgba(255, 0, 119, 0.5);
+  padding: 20px;
+  border-radius: 20px;
+  width: 75%; /* ✅ Adjust width for better centering */
+  min-width: 300px;
+}
+
+/* ✅ Centering About Me Title */
+.about-content h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #fff;
+  font-style: italic;
+  text-align: center;
+}
+
+.about-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: white;
+}
+
+.about-container span {
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* ✅ Experience Section - Grid Layout */
+.experience-section {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+.experience-section h2 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+/* ✅ Experience Grid for VaultOfCodes & IBM */
+.experience-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* ✅ Experience Card Styling */
+.experience-card {
+  background: linear-gradient(145deg, #1c0129, #3b023d);
+  box-shadow: 0px 10px 30px rgba(255, 0, 119, 0.5);
+  padding: 20px;
+  border-radius: 20px;
+  width: 45%; /* Adjust width as needed */
+  min-width: 300px;
+}
+
+/* ✅ Centering the NullClasses Section Below */
+.experience-center {
+  width: 60%;
+  margin: 30px auto;
+}
+
+/* ✅ Experience Content Styles */
+.company {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.location {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.experience-content p {
+  text-align: left;
+  line-height: 1.6;
+}
+
+/* ✅ List Styling */
+.experience-content ul {
+  list-style: none;
+  padding: 0;
+  
+}
+
+.experience-content ul li {
+  font-size: 1rem;
+  margin: 10px 0;
+  text-align: left;
+  padding-left: 20px;
+  position: relative;
+}
+
+.experience-content ul li::before {
+  content: "•";
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-content {
+    padding-right: 0;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .experience-section {
+    width: 100%;
+    text-align: center;
+    align-self: center;
+  }
+
+  .experience-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .experience-card {
+    width: 90%;
+  }
+
+  .experience-center {
+    width: 90%;
+  }
+}

@@ -1,0 +1,90 @@
+.contact-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url("./../assets/All_bg.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  backdrop-filter: blur(10px);
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: flex-start; /* Align content at the top */
+  align-items: center;
+  position: relative;
+  padding: 50px 5%;
+}
+
+/* Center the heading at the top */
+.contact-container h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px; /* Add margin to the top */
+  font-style: italic;
+}
+
+/* Form box styling */
+.contact-form {
+  background: linear-gradient(145deg, #1c0129, #3b023d);
+  box-shadow: 0px 10px 30px rgba(255, 0, 119, 0.5);
+  padding: 20px;
+  border-radius: 20px;text-align: center;
+  width: 90%;
+  max-width: 600px; /* Limit width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 0;
+}
+
+.contact-form label {
+  align-self: flex-start; /* Align labels to the left */
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+/* Input fields */
+input, textarea {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  width: 100%; /* Full width of form */
+  max-width: 500px; /* Increase width */
+  padding: 12px;
+  outline: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Textarea height */
+textarea {
+  height: 120px;
+}
+
+input, textarea :focus{
+  box-shadow: 0px 10px 30px rgba(255, 0, 119, 0.5);
+}
+
+/* Button styling */
+button {
+  background-color: white;
+  margin-top: 20px;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: white;
+}
