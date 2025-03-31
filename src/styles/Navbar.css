@@ -12,6 +12,7 @@
   z-index: 1000;
 }
 
+/* Centering the navigation links */
 .nav-center {
   display: flex;
   gap: 30px;
@@ -36,13 +37,35 @@
   border-radius: 30px;
 }
 
+/* ✅ Responsive Design */
 @media (max-width: 768px) {
   .navbar {
     width: 90%;
+    padding: 8px 0;
   }
 
-  .nav-links {
-    flex-direction: row;
-    gap: 15px;
+  .nav-center {
+    gap: 15px; /* Reduce space between links */
+  }
+
+  .nav-center li a {
+    padding: 8px 15px; /* Reduce padding to fit smaller screens */
+    font-size: 14px; /* Slightly smaller font */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    width: 95%;
+    padding: 8px 0;
+  }
+
+  .nav-center {
+    gap: 10px; /* Further reduce space between links */
+  }
+
+  .nav-center li a {
+    padding: 6px 12px; /* Reduce padding further */
+    font-size: 12px; /* Smaller font for very small screens */
   }
 }
