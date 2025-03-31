@@ -3,13 +3,14 @@
   top: 15px;
   left: 50%;
   transform: translateX(-50%);
-  width: 50%;
+  width: 95%; /* Adjusted for better mobile fit */
   background: rgba(0, 0, 0, 0.8);
-  padding: 10px 0;
+  padding: 10px; /* Increased padding for better spacing */
   display: flex;
   justify-content: center;
   border-radius: 30px;
   z-index: 1000;
+  overflow: hidden; /* Prevents content overflow */
 }
 
 /* Centering the navigation links */
@@ -40,8 +41,8 @@
 /* ✅ Responsive Design */
 @media (max-width: 768px) {
   .navbar {
-    width: 90%;
-    padding: 8px 0;
+    width: 90%; /* Adjust width for smaller screens */
+    padding: 8px; /* Reduce padding */
   }
 
   .nav-center {
@@ -49,23 +50,23 @@
   }
 
   .nav-center li a {
-    padding: 8px 15px; /* Reduce padding to fit smaller screens */
+    padding: 8px 12px; /* Adjust padding */
     font-size: 14px; /* Slightly smaller font */
   }
 }
 
 @media (max-width: 480px) {
   .navbar {
-    width: 95%;
-    padding: 8px 0;
+    width: 95%; /* Further increase width */
+    padding: 8px; /* Adjust padding */
   }
 
   .nav-center {
-    gap: 10px; /* Further reduce space between links */
+    gap: 10px; /* Reduce space between links */
   }
 
   .nav-center li a {
-    padding: 6px 12px; /* Reduce padding further */
-    font-size: 12px; /* Smaller font for very small screens */
+    padding: 6px 10px; /* Reduce padding further */
+    font-size: 12px; /* Smaller font for small screens */
   }
 }
